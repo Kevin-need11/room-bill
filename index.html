@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>房間計費｜好厝</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="房間計費">
+<meta name="application-name" content="房間計費">
+<meta name="theme-color" content="#eef2ea">
+<!-- 好厝 logo 當主畫面 icon（這一頁是我們自己的網域，iOS 會讀到）-->
+<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+<link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<style>
+  html,body{height:100%;margin:0}
+  body{background:#eef2ea;color:#3a4b34;
+       font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+       display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+       -webkit-tap-highlight-color:transparent;cursor:pointer;text-align:center;padding:24px}
+  img{width:128px;height:128px;border-radius:28px;box-shadow:0 8px 24px rgba(58,75,52,.22)}
+  .t{font-size:20px;letter-spacing:3px;font-weight:700;color:#3a4b34}
+  .sub{font-size:12px;letter-spacing:2px;color:#6e4628;margin-top:-10px}
+  .btn{margin-top:4px;background:#5e7554;color:#fff;border:none;border-radius:999px;
+       padding:14px 42px;font-size:17px;letter-spacing:3px;box-shadow:0 4px 14px rgba(94,117,84,.32)}
+  .s{font-size:12px;color:#55634c;line-height:1.8;max-width:300px}
+</style>
+</head>
+<body onclick="go()">
+  <img src="icon-512.png" alt="房間計費">
+  <div class="t">房間計費</div>
+  <div class="sub">好厝安居 · 水電帳單</div>
+  <button class="btn" onclick="go();event.stopPropagation()">進入 →</button>
+  <div class="s">第一次設定：按手機分享 ⬆️ →「加入主畫面」，桌面就會出現好厝 logo。<br>以後點 logo 進這頁，按「進入」就到系統。</div>
+<script>
+  var EXEC="https://script.google.com/macros/s/AKfycbwpTY5HXfQPE58D8-K5fB1IbrmyWM-ZSBLbKtNO2Zp90ipwnp3Ql-SYWPxn6KWgpZCsdA/exec";
+  function go(){ location.href = EXEC; }
+</script>
+</body>
+</html>
